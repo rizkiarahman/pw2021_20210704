@@ -7,7 +7,7 @@ if (isset($_POST['tambah'])) {
   if (tambah($_POST) > 0) {
     echo "<script>
           alert('data berhasil ditambahkan');
-          document.location.href = 'latihan3.php';
+          document.location.href = 'index.php';
           </script>";
   } else {
     echo "data gagal ditambahkan!";
@@ -23,7 +23,7 @@ if (isset($_POST['tambah'])) {
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tambah Data Mahasiswa</title>
+  <title>Form Tambah Data Mahasiswa</title>
 </head>
 
 <body>
