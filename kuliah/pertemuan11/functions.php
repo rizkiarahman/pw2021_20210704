@@ -86,8 +86,6 @@ function cari($keyword)
               nama LIKE '%$keyword%' OR
               nrp LIKE '%$keyword%'              
               ";
-
-
   $result = mysqli_query($conn, $query);
 
   $row = [];
