@@ -17,7 +17,7 @@ function query($query)
   }
 
   // jika hasil datanya banyak
-  $row = [];
+  $rows = [];
   while ($row = mysqli_fetch_assoc($result)) {
     $rows[] = $row;
   }
@@ -82,16 +82,18 @@ function cari($keyword)
   $conn  = koneksi();
 
   $query = "SELECT * FROM mahasiswa
-              WHERE 
+              WHERE  
               nama LIKE '%$keyword%' OR
-              nrp LIKE '%$keyword%'              
+              nrp LIKE '%$keyword%' 
+               
               ";
+
   $result = mysqli_query($conn, $query);
 
-  $row = [];
+  $rows = [];
   while ($row = mysqli_fetch_assoc($result)) {
     $rows[] = $row;
-
-    return $rows;
   }
+
+  return $rows;
 }

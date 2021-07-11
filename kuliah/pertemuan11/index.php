@@ -1,8 +1,4 @@
 <?php
-// agar tidak muncul pesan eror diubah angka 0  
-error_reporting(1);
-// dampaknya akan susah untuk mengetahui dimana letak koding yang error
-
 require 'functions.php';
 $mahasiswa = query("SELECT * FROM mahasiswa");
 
